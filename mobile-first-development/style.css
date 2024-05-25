@@ -1,18 +1,40 @@
 main {
-  padding: 20px 0;
+  margin-top: 70px;
+}
+
+main h1{
+  margin: 0 10px;
+  text-align: center;
+  font-family: "Amatic SC", cursive;
+  font-size: 70px;
+}
+
+main h2{
+  margin: 15px 0 10px 0;
+  font-family: "Special Elite", cursive;
+  font-size: 30px;
+  border-bottom: 1px solid gray;
+}
+
+main h3{
+  margin: 15px 0 10px 0;
+  font-family: "Special Elite", cursive;
+  font-size: 20px;
+  border-bottom: 1px solid gray;
+}
+
+main p{
+  margin-top: 0;
+  font-family: "Roboto Light", sans-serif;
+  font-size: 15px;
+}
+
+.bg-border {
+  background-color: #9f8170;
 }
 
 section {
   margin-bottom: 100px;
-}
-
-h1 {
-  margin: 0 0 30px 10px;
-}
-
-h2 {
-  margin: 0 10px;
-  border-bottom: 1px solid gray;
 }
 
 h3 {
@@ -24,7 +46,7 @@ h3 {
 
 .group {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   margin-bottom: 100px;
 }
 
@@ -35,4 +57,20 @@ h3 {
 
 .item-double {
   flex: 2;
+  margin: 10px;
+}
+
+@media all and (min-width: 800px) {
+  section,
+  h1 {
+    padding: 0 10%;
+  }
+
+  .group {
+    flex-direction: row;
+  }
+}
+
+.group img {
+  width: 100%;
 }
